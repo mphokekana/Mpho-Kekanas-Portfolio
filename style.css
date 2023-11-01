@@ -50,7 +50,7 @@ nav ul li a{
 
 nav ul li a::after{
     content: '';
-    width: 0%;
+    width: 0;
     height: 3px;
     background: #ff004f;
     position: absolute;
@@ -187,6 +187,11 @@ nav ul li a:hover::after{
     transition: backgrou8nd 0.5s, transform 0.5s;
 }
 
+.server-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
@@ -262,7 +267,7 @@ nav ul li a:hover::after{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
 }
 
@@ -283,7 +288,9 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
+    transition: background 0.5s;
 }
+
 .btn:hover{
     background: #ff004f;
 }
@@ -319,6 +326,7 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
+
 .social-icons{
     margin-top: 30px;
 }
@@ -329,6 +337,7 @@ nav ul li a:hover::after{
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
+    transition: transform 0.5s;
 }
 
 .social-icons a:hover{
@@ -376,6 +385,10 @@ form .btn2{
     color: #ff004f;
 }
 /* -------------------css for small screens------------ */
+nav .fas{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/IMG-20231014-WA0016.jpg);
